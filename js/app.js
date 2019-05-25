@@ -44,7 +44,40 @@ Cookiestore.prototype.getHourlySales = function () {
   // console.log('hoursale', this.hoursale);
 };
 
+function makeFooterRow() { //eslint-disable-line
+  var tableRow = document.createElement('tr');
+  tableRow.textContent = 'Totals';
+  tableEl.appendChild(tableRow);
 
+  var tableD = document.createElement('td');
+  tableD.textContent ='';
+  tableRow.appendChild(tableD);
+
+
+
+  var bigStupidTotal = 0;
+  for (var i = 0; i < customerPerhr.length; i++) {
+    var hourlyTotal = 0;
+    for (var j = 0; j < storeLocation.length; j++) {
+      hourlyTotal = hourlyTotal + storeLocation[j].hoursale[i];
+      bigStupidTotal += storeLocation[j].hoursale[i];
+    }
+    var tdElement = document.createElement('td');
+    tdElement.textContent = hourlyTotal;
+    tableRow.appendChild(tdElement);
+    
+
+  }
+
+  tdElement = document.createElement('td');
+  tdElement.textContent = bigStupidTotal;
+  tableRow.appendChild(tdElement);
+
+  
+
+
+
+}
 
 Cookiestore.prototype.renderCookiestore = function(){
 
@@ -62,12 +95,12 @@ Cookiestore.prototype.renderCookiestore = function(){
   var trEl = document.createElement('tr');
   tableEl.appendChild(trEl);
 
+  
+
   // add the location
   var tdEl = document.createElement('td');
   tdEl.textContent = this.location;
   trEl.appendChild(tdEl);
-
-
 
 
   // add the minnimum
@@ -112,8 +145,7 @@ function renderHeader(){
   trEl.appendChild(thEl2);
 
 
-  // var trEl1 = document.createElement('tr');
-  // tableEl.appendChild(trEl1);
+
 
   for(var i = 0; i < customerPerhr.length; i++){
     var thEl = document.createElement('th');
@@ -141,9 +173,10 @@ function render(){
   seaTtle.renderCookiestore();
   capHill.renderCookiestore();
   alKi.renderCookiestore();
+
+ 
+
 }
 
-
 render();
-
-
+makeFooterRow();
