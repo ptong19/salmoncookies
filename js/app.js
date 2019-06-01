@@ -160,6 +160,7 @@ function render(){
   // seaTtle.renderCookiestore();
   // capHill.renderCookiestore();
   // alKi.renderCookiestore();
+  
 
   for(var i = 0; i <storeLocation.length; i++){
     storeLocation[i].renderCookiestore();
