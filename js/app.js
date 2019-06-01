@@ -123,7 +123,7 @@ Cookiestore.prototype.renderCookiestore = function(){
 function renderHeader(){
   // create element
   // add content
-  // attach it to the DOM
+  // attach it to the DOM 
 
   var trEl = document.createElement('tr');
   tableEl.appendChild(trEl);
@@ -214,19 +214,6 @@ var clearFields = function(event){
 
 
 
-// var formEl = document.getElementById('form');
-// formEl.addEventListener('submit', function(event) {
-//   event.preventDefault();
-//   var newStorename = event.target.storeLocal.value;
-//   var minCust = event.target.minInput.value;
-//   var maxCust = event.target.maxInput.value;
-//   var avgCookies = event.avgInput.value;
-//   var Storename = new Cookiestore();
-//   // Storename.getHourlySales();
-//   Storename.renderCookiestore();
-//   // stores.push(newStore);
-//   // clearFields(event);
-// });
 
 
 

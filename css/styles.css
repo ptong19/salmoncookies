@@ -1,4 +1,8 @@
 
+.h12{
+  font-family: 'Anton', sans-serif;
+  font-size:60px;
+}
 
 header{
   text-align: center;
@@ -15,6 +19,7 @@ img{
 topnav {
   background-color: #333;
   overflow: hidden;
+  
 }
 
 /* Style the links inside the navigation bar */
@@ -39,51 +44,6 @@ topnav {
   color: white;
 }
 
-img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 450px;
-  height: 250px;
-  margin-top: -150px; /* Half the height */
-  margin-left: -250px; /* Half the width */
-}
-.swing {
-    animation: swing ease-in-out 1s infinite alternate;
-    transform-origin: center -20px;
-    float:left;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
-}
-.swing img {
-    border: 5px solid #f8f8f8;
-    display: block;
-}
-.swing:after{
-    content: '';
-    position: absolute;  
-    width: 20px; height: 20px;  
-    border: 1px solid #999;
-    top: -10px; left: 50%;
-    z-index: 0;
-    border-bottom: none;
-    border-right: none;
-    transform: rotate(45deg);
-}
-/* nail */
-.swing:before{
-    content: '';
-    position: absolute;
-    width: 5px; height: 5px;
-    top: -14px;left: 54%;
-    z-index: 5;
-    border-radius: 50% 50%;
-    background: #000;
-}
- 
-@keyframes swing {
-    0% { transform: rotate(3deg); }
-    100% { transform: rotate(-3deg); }
-}
 
 body {
 	margin: 0;
@@ -143,6 +103,83 @@ tbody
 	}
 }
 
+.foot{
+  margin-bottom: 50px;
+}
+
+.img1{
+  margin-left: 500px;
+  width: 450px;
+  height: 250px;
+}
+
+#id1{
+  text-align: left;
+  color:white;
+  font-size:16px;
+  padding:60px;
+  margin:10px;
+}
+.img2{
+  width: 450px;
+  height: 250px;
+  margin-left:200px
+}
+
+#tshirt{
+  float: left;
+  margin-left:300px
+}
+div.id2 > img:last-child {
+  margin-left:0px;
+}
 
 
 
+.t{
+  font-size:16px;
+  padding:-5px;
+  margin:1px;
+  text-align: center;
+}
+
+#id2{
+  text-align: center;
+  color:white;
+  font-size:16px;
+  padding:60px;
+  margin:10px;
+}
+
+.s1{
+  font-size:20px;
+  padding:20px;
+  margin:20px;
+  text-align: right;
+}
+
+#fish{
+  float: right
+}
+
+.foot{
+  text-align: left;
+  color:white;
+  font-size:16px;
+  padding:60px;
+  margin:10px;
+}
+
+
+
+#id3{
+  text-align: center;
+  color:white;
+  font-size:16px;
+  padding:-50px;
+  margin:-40px;
+}
+
+.m1{
+  font-size: 60px;
+}
