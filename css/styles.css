@@ -84,13 +84,13 @@ thead
 	}
 
 
-tbody 
+/* tbody 
 	tr&:hover {
       background-color: rgba(255,255,255,0.3);	}
-      
+       */
 
 
-	td {position: relative;&:hover {&:before {content: "";
+	/* td {position: relative;&:hover {&:before {content: "";
 				position: absolute;
 				left: 0;
 				right: 0;
@@ -101,7 +101,7 @@ tbody
 			}
 		}
 	}
-}
+} */
 
 .foot{
   margin-bottom: 50px;
@@ -130,6 +130,8 @@ tbody
   float: left;
   margin-left:300px
 }
+
+
 div.id2 > img:last-child {
   margin-left:0px;
 }
